@@ -1,7 +1,7 @@
 import React from 'react';
-import division2Image from '../assets/Source/1632493008193.jpg';
+import division2Image from '../assets/Source/1.png';
 
-import division3Image from '../assets/Source/1686187966920.png';
+import division3Image from '../assets/Source/2.jpeg';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 function About() {
@@ -34,13 +34,13 @@ function About() {
 
                 <div className="image">
                     <img src={division2Image} alt="Division 2 Image" />
-                    <h2>Founder</h2>
+                    <h2>Developer</h2>
                     <p>Chinmayee Sahoo</p>
                     <div style={iconContainerStyle}>
                         <a href="https://github.com/Chinmayee221" target="_blank" rel="noopener noreferrer">
                             <FaGithub style={iconStyle} />
                         </a>
-                        <a href="www.linkedin.com/in/satyabrata-pradhan-2b735120b" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/in/chinmayee-sahoo-028b4125a" target="_blank" rel="noopener noreferrer">
                             <FaLinkedin style={iconStyle} />
                         </a>
                     </div>
@@ -48,13 +48,13 @@ function About() {
 
                 <div className="image">
                     <img src={division3Image} alt="Division 2 Image" />
-                    <h2>Founder</h2>
-                    <p>SATYABRATA PRADHAN</p>
+                    <h2>Developer</h2>
+                    <p>Purnima Sahoo</p>
                     <div style={iconContainerStyle}>
-                        <a href="https://github.com/Satyabrata011" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/Chinmayee221" target="_blank" rel="noopener noreferrer">
                             <FaGithub style={iconStyle} />
                         </a>
-                        <a href="www.linkedin.com/satyabrata-pradhan-2b735120b" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/in/chinmayee-sahoo-028b4125a" target="_blank" rel="noopener noreferrer">
                             <FaLinkedin style={iconStyle} />
                         </a>
                     </div>
@@ -63,5 +63,4 @@ function About() {
         </>
     );
 }
-
 export default About;
