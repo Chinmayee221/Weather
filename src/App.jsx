@@ -26,10 +26,6 @@ function App() {
    
    <Footer />
    
-   
- 
-   
-
    </>
    
   )

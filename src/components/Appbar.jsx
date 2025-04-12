@@ -1,8 +1,10 @@
+import { Button } from "@mui/material";
 import React from "react";
-import{ Link } from "react-router-dom"
+import{ Link, useNavigate } from "react-router-dom"
 
 
 function Appbar(){
+    const navigate = useNavigate();
   
     return(
         <>
@@ -10,9 +12,10 @@ function Appbar(){
       <h1 >Weather Today</h1>
       <div className="topRightButtons">
         
-       <Link to='/'> <button to='/'>HOME</button> </Link> 
-       <Link to='/about'> <button>ABOUT</button> </Link>  
-       <Link to='/contact'> <button>CONTACT</button> </Link>       
+      <Button onClick={() => navigate('/')}>HOME</Button>
+        <Button onClick={() => navigate('/about')}>ABOUT</Button>
+        <Button onClick={() => navigate('/contact')}>CONTACT</Button>
+
         </div>
     </div> 
         </>

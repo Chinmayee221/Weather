@@ -23,17 +23,19 @@ const [search, setSearch] =useState("Bhubaneswar")
   },[search])
 
   const containerStyle = {
-    backgroundColor: '#F7E6C4', // Replace with your desired color
-    media : {mobile :"768px", tab:"998px"},
+    backgroundColor: '#F7E6C4',
   };
+  
 
   return (
     <div className="background" style={containerStyle}>
       
-    {<div className="container2">
+    {<div className="container2 responsive-home">
+
       <div className="inputData">
         <input type="search"
         className="inputFeild"
+        placeholder="Enter city..."
         onChange={ (event) =>{ setSearch(event.target.value)} } />
         
       

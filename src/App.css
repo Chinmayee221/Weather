@@ -1,218 +1,369 @@
-
-/*Appbar css*/
-.appbar {
-  max-width: 1500px; /* Set the maximum width for the container */
-  position: relative;
-  height: 60px;
-  display: flex;
-  margin:  auto;   /* Center the container horizontally */
-  padding: 10px;    /* Add some padding inside the container */
-  border: 2px solid hsl(0, 0%, 0%); /* Add a border for visualization */
-  background-color: rgba(78, 78, 240, 0.425);
-  border-radius: 10px;
+.background {
+    margin-bottom: 5rem;
+    width: 100%;
 }
-.background{
-  position: relative;
-  border-radius:10px ;
+
+
+/* Appbar */
+
+.appbar {
+    width: 100%;
+    position: relative;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid hsl(0, 0%, 0%);
+    background-color: rgba(78, 78, 240, 0.425);
+    border-radius: 10px;
+    flex-wrap: wrap;
 }
 
 .appbar h1 {
-  align-content: center;
-  left: 0;
-  top: 0;
-  margin: 10px;
+    margin: 10px;
+    font-size: 1.5rem;
 }
 
-/* button.css */
 .topRightButtons {
-  position: absolute;
-  top: 30px;
-  right: 10px;
-  
-}
-.topRightButtons button {
-  margin-right: 10px; /* Add some space between buttons */
-  font-weight: bold;
-
-}
-/* button.css */
-
-
-/*Appbar css*/
-
-
- /*Footer css*/
- .footer {
-  max-width: 1500px; /* Set the maximum width for the container */
-  
-  height: 60px;
-  display: flex;
-  margin:  auto;   /* Center the container horizontally */
-  padding: 10px;    /* Add some padding inside the container */
-  border: 2px solid hsl(0, 100%, 96%); /* Add a border for visualization */
-  background-color: rgb(0, 0, 0);
-  border-radius: 10px;
-  bottom: 0; 
-  position: "fixed",
- 
-
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 10px;
 }
 
-.footer h1{
-  text-align-last: right;
-  text-decoration-color: bisque;
-  color: bisque;
+.nav-button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    font-size: 0.9rem;
 }
-.footer p{
-  position: relative;
-  color: bisque;
-  text-align: right;
 
+.nav-button:hover {
+    background-color: #0056b3;
 }
-  /*Footer css*/
 
 
-  /* ContainerWithDivs.css */
+/* Footer */
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid hsl(0, 100%, 96%);
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    flex-wrap: wrap;
+}
+
+.footer h1,
+.footer p {
+    color: bisque;
+    margin: 5px;
+}
+
+
+/* ContainerWithDivs */
+
 .container2 {
-display: flex;
-justify-content: space-around;
-align-items: center;
-height: 100vh;
-border: 2px solid hsl(0, 100%, 96%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    min-height: 100vh;
 }
 
-.division {
-border: 1px solid #ddd;
-background-color: rgb(98, 190, 190);
-padding: 20px;
-margin: 10px;
-text-align: center;
-border-radius: 10px;
-}
-
+.division,
 .inputData {
-background-color: rgb(98, 190, 190);
-padding: 20px;
-margin: 10px;
-text-align: center;
-height: 300px;
-border-radius: 10px;
-width: 300px;
-}
-.inputFeild{
-border-radius: 30px;
-height: 30px;
-padding: 10px;
-  
-}
-/* ContainerWithDivs.css */
-
-*{
-font-family: 'Jost', sans-serif;
-font-family: 'Quicksand', sans-serif;
+    border: 1px solid #ddd;
+    background-color: rgb(98, 190, 190);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
 }
 
-/* min max.css */
-.tempmin_max{
-font-size: 20px;
-font-weight: bold;
-
+.inputFeild {
+    border-radius: 30px;
+    height: 30px;
+    padding: 10px;
+    width: 100%;
 }
 
-/* min max.css */
+.tempmin_max {
+    font-size: 20px;
+    font-weight: bold;
+}
 
 
-/* About.css */
+/* About */
+
 .image {
-border: 1px solid #ddd;
-background-color: rgb(98, 190, 190);
-padding: 10px;
-margin: 10px;
-text-align: center;
-border-radius: 10px;
-height: 350px;
-width: 300px;
-justify-content: center;
-align-items: center; 
-position: relative;
-}
-.image h2{
-font-weight: bold;
-}
-.image p{
-font-weight: bold;
+    border: 1px solid #ddd;
+    background-color: rgb(98, 190, 190);
+    padding: 10px;
+    margin: 10px auto;
+    text-align: center;
+    border-radius: 10px;
+    max-width: 40%;
+    max-height: 60%;
 }
 
 .image img {
-max-width: 300px; /* Make the image responsive */
-height: 200px; /* Maintain aspect ratio */
-border: 1px solid #ddd; /* Add a border around the image */
-border-radius: 8px; /* Add a border radius for rounded corners */
-margin-top: 10px; /* Add some space above the image */
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .container4 h1 {
-text-align: center;
-text-decoration: solid;
-font-size: 60px;
+    text-align: center;
+    font-size: 2rem;
 }
 
-.container4 p{
-font-size: 20px;
-font-weight: bold;
+.image h2 {
+    margin: 0;
 }
 
-
-/* About.css */
-
-
-
-/* Contact.css */
-.container5 h1{
-text-align: center;
+.container4 p {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
 }
 
 
+/* Contact */
+
+.container5 h1 {
+    text-align: center;
+}
 
 form {
-display: flex;
-align-items: flex-start;
-flex-direction: column;
-width: 100%;
-font-size: 16px;
-
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    font-size: 16px;
+    gap: 10px;
 }
 
 .textarea {
-  max-width: 100%;
-  min-width: 100%;
-  width: 100%;
-  max-height: 100px;
-  min-height: 100px;
-  padding: 7px;
-  outline: none;
-  border-radius: 5px;
-  border: 1px solid rgb(0, 0, 0);
-
-
+    width: 100%;
+    height: 100px;
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 0, 0);
+    resize: vertical;
 }
 
 .label {
-  margin-top: 1rem;
-  font-weight: bold;
-  
+    font-weight: bold;
 }
 
 .input[type="submit"] {
-  margin-top: 2rem;
-  cursor: pointer;
-  background: rgb(249, 105, 14);
-  color: rgb(0, 0, 0);
-  border: none;
+    cursor: pointer;
+    background: rgb(249, 105, 14);
+    color: black;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
 }
 
-/* Contact.css */
+
+/* Global */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Quicksand', 'Jost', sans-serif;
+}
 
 
+/* Media Queries for Responsiveness */
 
+@media (max-width: 768px) {
+    .appbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .topRightButtons {
+        justify-content: flex-start;
+        margin-top: 10px;
+    }
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    .container2 {
+        flex-direction: column;
+    }
+    .image {
+        width: 90%;
+    }
+    .container4 h1 {
+        font-size: 1.5rem;
+    }
+    .background {
+        margin-bottom: 8rem;
+        width: 100%;
+    }
+}
+
+
+/* Media Queries for smaller screens */
+
+@media (max-width: 480px) {
+    .nav-button {
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+        font-size: 1rem;
+    }
+    .appbar h1 {
+        font-size: 1.2rem;
+    }
+    .background {
+        margin-bottom: 8rem;
+        width: 100%;
+    }
+}
+
+
+/* Make Home component layout stack on small screens */
+
+@media (max-width: 768px) {
+    .responsive-home {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .inputData {
+        width: 90%;
+        height: auto;
+        padding: 15px;
+    }
+    .inputFeild {
+        width: 100%;
+        padding: 10px;
+    }
+    .background {
+        margin-bottom: 8rem;
+        width: 100%;
+    }
+}
+
+
+/* Responsive layout for About.jsx */
+
+
+/* Base styles for container4 */
+
+
+/* Base styles for container4 */
+
+.container4 {
+    background-color: #F7E6C4;
+    display: flex;
+    justify-content: center;
+    /* Center the content */
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+
+/* Image styles */
+
+.image {
+    width: 30%;
+    /* Ensure the image takes up 30% of the container width */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    box-sizing: border-box;
+    overflow: auto;
+    height: 100%;
+}
+
+.image img {
+    width: 100%;
+    /* Make image responsive */
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    /* Prevent the image from overflowing */
+}
+
+
+/* Text content styles */
+
+.text-content {
+    width: 50%;
+    /* Adjust text width */
+    text-align: center;
+}
+
+
+/* Media query for screens smaller than 768px */
+
+@media (max-width: 768px) {
+    .container4 {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    .image {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .image img {
+        width: 100%;
+    }
+    .text-content {
+        width: 80%;
+    }
+    .background {
+        margin-bottom: 8rem;
+        width: 100%;
+    }
+}
+
+
+/* Make the container text look good on mobile screens */
+
+@media (max-width: 480px) {
+    .container4 h1 {
+        font-size: 1.5rem;
+    }
+    .container4 p {
+        font-size: 1rem;
+    }
+    .background {
+        margin-bottom: 8rem;
+        width: 100%;
+    }
+}
